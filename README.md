@@ -15,11 +15,7 @@ We formulate hallucination detection from the perspective of dynamical systems a
 
 📄 Paper: https://arxiv.org/pdf/2603.06081
 
-## Code
 
-The codebase is currently being organized and will be released soon.
-
-For early access, please contact luanbz0075@gmail.com.
 
 ## Getting Started
 
@@ -64,6 +60,12 @@ example scripts: scripts/main.sh, scripts/main_pop.sh, scripts/main_translated.s
 example script: scripts/extract_hidden.sh 
 1. evaluation/extract_hidden_layers.py (runs a given model on a given dataset, and saves the hidden dimensions + labels for training)
 2. train_scorer_2 (takes as input the hidden dimensions from previous script, runs gradient descent, saves the resulting model)
+
+## others
+
+The codebase is based on https://github.com/amazon-science/factual-confidence-of-llms . We sincerely thank the authors for their excellent work and for making their code publicly available.
+
+For more information, please contact luanbz0075@gmail.com.
 
 ## Citation
 
