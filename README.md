@@ -52,13 +52,13 @@ To prepare the True/False Lama TRex dataset use dataset_prep.py, which will crea
 To experiment with the PopQA dataset :
  - Download csv file from the following [link](https://github.com/AlexTMallen/adaptive-retrieval/blob/main/data/popQA.tsv) (tested on 25/06/2024)
  - run slot_filling.py to get a specific model's ability to correctly answer each question, and generate the ["is_factual"] column
+
 ### to run experiments:
 1. run training pipeline ("hidden") method
 2. run main.py (all results are saved except for consistency)
 3. run consistency pipeline
 example scripts: scripts/main.sh, scripts/main_pop.sh, scripts/main_translated.sh, scripts/main_pik_lama.sh
-for openai results, they are computed by running either evaluation/openai_surrogate.py, evaluation/openai_verbalized.py or data_gen/openai_sampler.py followed by the consistency pipeline.
-Don't forget to set the variable in your environment before running. OPENAI_KEY=$mysecretkey 
+
 
 ### training pipeline - run, in order:
 example script: scripts/extract_hidden.sh 
